@@ -1,12 +1,13 @@
 class menuPage {
 
     elements = {
-        servicesMainMenu: () => cy.get("//a[text() = 'Services']"),
-        howWeDoItMainMenu: () => cy.get("//a[text() = 'How We Do It']"),
-        ourWorkMainMenu: () => cy.get("//a[text() = 'Our Work']"),
-        insightsMainMenu: () => cy.get("//a[text() = 'Insights']"),
-        aboutMainMenu: () => cy.get("//a[text() = 'About']"),
-        contactUsMenuBtn: () => cy.get("//span[text() = 'CONTACT US']")
+        servicesMainMenu: () => cy.get('a').contains('Services'),
+        howWeDoItMainMenu: () => cy.get('a').contains('How We Do It'),
+        ourWorkMainMenu: () => cy.get('a').contains('Our Work'),
+        insightsMainMenu: () => cy.get('a').contains('Insights'),
+        aboutMainMenu: () => cy.get('a').contains('About'),
+        careersMainMenu: () => cy.get('a').contains('Careers'),
+        contactUsMenuBtn: () => cy.get('span').contains('CONTACT US')
     }
     
     clickServicesMainMenu(){

@@ -1,4 +1,3 @@
-/// <reference types="cypress" />
 import homePage from "../pages/homePage";
 
 describe('Home Page Tests', () => {
