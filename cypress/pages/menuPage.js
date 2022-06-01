@@ -30,6 +30,10 @@ class menuPage {
         this.elements.aboutMainMenu.click();
     }
 
+    clickCareersMainMenu(){
+        this.elements.careersMainMenu.click();
+    }
+
     clickContactUsMenuBtn(){
         this.elements.contactUsMenuBtn.click();
     }
