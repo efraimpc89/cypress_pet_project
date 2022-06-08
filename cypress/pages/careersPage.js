@@ -1,9 +1,7 @@
-class careersPage {
+export default class CareersPage {
 
     elements = {
-        careersTitle: () => cy.get('span').contains(' Work with Us ')
+        findButton: () => cy.get('button').contains('Find')
     }
     
 }
-
-module.exports = new careersPage();

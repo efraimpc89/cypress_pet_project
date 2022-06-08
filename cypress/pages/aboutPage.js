@@ -1,9 +1,7 @@
-class aboutPage {
+export default class AboutPage {
 
     elements = {
         aboutTitle: () => cy.get('span').contains(' About ')
     }
     
 }
-
-module.exports = new aboutPage();
