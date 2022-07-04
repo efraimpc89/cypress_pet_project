@@ -28,7 +28,7 @@ describe('Menu Navigation Tests', () => {
         careersPage = new CareersPage();
         
     });
-/*
+
     it('Should display services main menu',() => {
         menuPage.elements.servicesMainMenu().should('exist')
     })
@@ -52,7 +52,7 @@ describe('Menu Navigation Tests', () => {
     it('Should display Careers main menu',() => {
         menuPage.elements.careersMainMenu().should('exist')
     })
-*/
+
     it('Should navigate to Services from main menu',() => {
         menuPage.clickServicesMainMenu()
         servicesPage.elements.servicesTitle().should('exist')
@@ -80,7 +80,7 @@ describe('Menu Navigation Tests', () => {
 
     it('Should navigate to Careers from main menu',() => {
         menuPage.clickCareersMainMenu()
-        careersPage.elements.findButton().should('exist')
+        careersPage.elements.btnFind().should('exist')
     })
 
 })
