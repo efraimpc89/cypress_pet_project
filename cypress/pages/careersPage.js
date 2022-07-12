@@ -1,10 +1,10 @@
 export default class CareersPage {
 
     elements = {
-        btnFind: () => cy.get('button').contains('Find'),
-        txtKeyword: () => cy.get('[id="new_form_job_search_1445745853_copy-keyword"]'),
+        btnFind: () => cy.get('button.recruiting-search__submit'),
+        txtKeyword: () => cy.get('#new_form_job_search_1445745853_copy-keyword'),
         selectLocation: () => cy.get('//div[@class="recruiting-search__location"]'),
-        viewAndApplyBtnList: () => cy.get('a').contains('View and apply')
+        //viewAndApplyBtnList: () => cy.get('a').contains('View and apply')
     }
 
     clickFindButton(){
@@ -15,6 +15,9 @@ export default class CareersPage {
         this.elements.txtKeyword().type(keyword)
     }
 
+    validateApplyBtnExists(){
+        cy.get('a').contains('View and apply').should('exist')
+    }
 
     
 }

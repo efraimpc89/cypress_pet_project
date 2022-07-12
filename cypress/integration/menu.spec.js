@@ -17,7 +17,7 @@ describe('Menu Navigation Tests', () => {
     let careersPage;
 
     beforeEach(() => {
-        cy.viewport('macbook-16')
+        cy.viewport(2000, 1250)
         cy.visit('https://www.epam.com/')
         menuPage = new MenuPage();
         servicesPage = new ServicesPage();
